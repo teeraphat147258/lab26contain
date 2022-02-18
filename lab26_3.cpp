@@ -1,8 +1,16 @@
 #include<iostream>
+#include<set>
 
 using namespace std;
 
-//Write function count() here.
+int count(int a[],int b){
+	set<int> x;
+	for(int i = 0 ; i < b ; i++){
+		x.insert(a[i]);
+	}
+	return x.size();
+}
+
 
 int main(){	
 	int data[] = {1,2,4,5,4,8,2,1,2,4,6,1,4,4,4,2,1,0,12}; 
